@@ -19,7 +19,7 @@ BuildRequires:	qt-devel >= 3.0.5
 Requires:	kdelibs
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define         _htmldir        /usr/share/doc/kde/HTML
+%define		_htmldir	/usr/share/doc/kde/HTML
 
 %description
 Keramik theme. To fully enjoy it set in Control Center, Look & Feel:
@@ -28,14 +28,14 @@ Keramik theme. To fully enjoy it set in Control Center, Look & Feel:
 - Color (menu)
 
 %description -l pl
-Motyw Keramik. Aby zobaczyæ go w ca³ej okaza³o¶ci ustaw w Centrum
-Sterowania, Look & Feal:
+Motyw Keramik. Aby zobaczyæ go w ca³ej okaza³o¶ci nale¿y ustawiæ w
+Centrum Sterowania, Look & Feal:
 - Typ dekoracji okien
 - Styl
 - Kolor (menu)
 
 %prep
-%setup  -q -n %{_theme}
+%setup -q -n %{_theme}
 
 %build
 rm -f missing
