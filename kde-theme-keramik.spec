@@ -1,7 +1,7 @@
 %define		_theme	keramik
 
 Summary:	keramik theme
-Summary(pl):	Temat keramik
+Summary(pl):	Motyw keramik
 Name:		kde-theme-%{_theme}
 Version:	1
 Release:	2.1
@@ -27,8 +27,8 @@ Keramik theme. To fully enjoy it set in Control Center, Look & Feel:
 - Color (menu)
 
 %description -l pl
-Keramik. Aby zobaczyæ go w ca³ej okaza³o¶ci ustaw w Centrum Sterowania, 
-Look & Feal:
+Motyw Keramik. Aby zobaczyæ go w ca³ej okaza³o¶ci ustaw w Centrum
+Sterowania, Look & Feal:
 - Typ dekoracji okien
 - Styl
 - Kolor (menu)
