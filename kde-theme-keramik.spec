@@ -16,7 +16,8 @@ BuildRequires:	automake
 BuildRequires:	freetype-devel
 BuildRequires:	motif-devel
 BuildRequires:	qt-devel >= 3.0.5
-Requires:	kdelibs
+BuildRequires:	kdelibs-devel < 8:3.1
+Requires:	kdelibs < 8:3.1
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_htmldir	/usr/share/doc/kde/HTML
