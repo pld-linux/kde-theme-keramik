@@ -10,9 +10,11 @@ Group:		Themes/Gtk
 #Source0:	http://www.kde-look.org/content/download.php?content=1961
 Source0:	1961-keramik.tgz
 URL:		http://www.kde-look.org/content/show.php?content=1961
-Requires:	kdelibs
-BuildRequires:	motif-devel
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	freetype-devel
+BuildRequires:	motif-devel
+Requires:	kdelibs
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
@@ -44,7 +46,8 @@ kde_icondir="%{_pixmapsdir}"; export kde_icondir
 KDEDIR=%{_prefix}
 export KDEDIR
 
-make -f Makefile.cvs
+#make -f Makefile.cvs
+%{__autoconf}
 %configure \
 	--with-motif
 
@@ -69,6 +72,7 @@ cd ../../kwin/clients/keramik
 cd ../..
 
 %post
+/sbin/ldconfig
 echo "You may have to run kinstalltheme for this theme to become available"
 echo "in currently opened sessions."
 
