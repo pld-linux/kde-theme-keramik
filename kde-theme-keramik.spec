@@ -4,9 +4,9 @@ Summary:	keramik theme
 Summary(pl):	Motyw keramik
 Name:		kde-theme-%{_theme}
 Version:	1
-Release:	2.1
+Release:	2.2
 License:	GPL
-Group:		Themes/Gtk
+Group:		Themes/GTK+
 #Source0:	http://www.kde-look.org/content/download.php?content=1961
 Source0:	1961-keramik.tgz
 # Source0-md5:	bd381b99435683bd4e7ee1b96c522392
