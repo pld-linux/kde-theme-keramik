@@ -4,7 +4,7 @@ Summary:	keramik theme
 Summary(pl):	Temat keramik
 Name:		kde-theme-%{_theme}
 Version:	1
-Release:	1
+Release:	2
 License:	GPL
 Group:		Themes/Gtk
 #Source0:	http://www.kde-look.org/content/download.php?content=1961
@@ -20,14 +20,14 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define         _htmldir        /usr/share/doc/kde/HTML
 
 %description
-Windows-XP-like theme. To fully enjoy it set in Control Center, Look & Feel:
+Keramik theme. To fully enjoy it set in Control Center, Look & Feel:
 - Window decoration
 - Style
 - Color (menu)
 
 %description -l pl
-Temat przypominaj±cy Windows-XP. Aby zobaczyæ go w ca³ej okaza³o¶ci ustaw w 
-Centrum Sterowania, Look & Feal:
+Keramik. Aby zobaczyæ go w ca³ej okaza³o¶ci ustaw w Centrum Sterowania, 
+Look & Feal:
 - Typ dekoracji okien
 - Styl
 - Kolor (menu)
@@ -67,6 +67,10 @@ cd ./kstyles/keramik
 cd ../../kwin/clients/keramik
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 cd ../..
+
+%post
+echo "You may have to run kinstalltheme for this theme to become available"
+echo "in currently opened sessions."
 
 %clean
 rm -rf $RPM_BUILD_ROOT
