@@ -4,7 +4,7 @@ Summary:	keramik theme
 Summary(pl):	Temat keramik
 Name:		kde-theme-%{_theme}
 Version:	1
-Release:	2
+Release:	2.1
 License:	GPL
 Group:		Themes/Gtk
 #Source0:	http://www.kde-look.org/content/download.php?content=1961
@@ -14,6 +14,7 @@ BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	freetype-devel
 BuildRequires:	motif-devel
+BuildRequires:	qt-devel >= 3.0.5
 Requires:	kdelibs
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
