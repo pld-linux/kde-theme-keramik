@@ -9,6 +9,7 @@ License:	GPL
 Group:		Themes/Gtk
 #Source0:	http://www.kde-look.org/content/download.php?content=1961
 Source0:	1961-keramik.tgz
+# Source0-md5:	bd381b99435683bd4e7ee1b96c522392
 URL:		http://www.kde-look.org/content/show.php?content=1961
 BuildRequires:	autoconf
 BuildRequires:	automake
