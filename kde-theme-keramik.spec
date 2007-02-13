@@ -1,7 +1,7 @@
 %define		_theme	keramik
 
 Summary:	keramik theme
-Summary(pl.UTF-8):   Motyw keramik
+Summary(pl.UTF-8):	Motyw keramik
 Name:		kde-theme-%{_theme}
 Version:	1
 Release:	2.2
